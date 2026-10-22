@@ -4,6 +4,8 @@ Live per-session usage in Claude Code: tokens, cache hit and session cost. It re
 
 > **Costs no tokens.** The mod only displays figures the engine already reports. It makes no model calls and adds nothing to your context.
 
+![usage-meter band above the prompt, with turn detail on](docs/band.png)
+
 ## Install
 
 At the prompt of a terminal session:
