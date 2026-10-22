@@ -1,0 +1,12 @@
+{
+  "name": "claude-usage-meter",
+  "owner": {
+    "name": "Dinesh Patra"
+  },
+  "plugins": [
+    {
+      "name": "usage-meter",
+      "source": "./"
+    }
+  ]
+}

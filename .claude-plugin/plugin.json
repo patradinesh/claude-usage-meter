@@ -1,0 +1,30 @@
+{
+  "name": "usage-meter",
+  "version": "0.1.0",
+  "description": "Live per-session usage band: tokens, cache hit and session cost, with optional turn detail",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "display": {
+      "type": "string",
+      "title": "Where to show usage",
+      "description": "band: row above the prompt. status: status line under the prompt (shows the plugin name).",
+      "options": [
+        "band",
+        "status"
+      ],
+      "default": "band"
+    },
+    "detail": {
+      "type": "boolean",
+      "title": "Show turn detail",
+      "description": "Adds last turn time and cost, total time, turn count and average cost per turn.",
+      "default": false
+    }
+  },
+  "author": {
+    "name": "Dinesh Patra"
+  },
+  "icon": ".claude-plugin/icon.png",
+  "license": "MIT",
+  "repository": "https://github.com/patradinesh/claude-usage-meter"
+}
