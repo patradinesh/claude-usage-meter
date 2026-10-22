@@ -6,6 +6,10 @@ Live per-session usage in Claude Code: tokens, cache hit and session cost. It re
 
 ![usage-meter band above the prompt, with turn detail on](docs/band.png)
 
+Or in the status line (`/usage-meter status`):
+
+![usage-meter in the status line](docs/status.png)
+
 ## Install
 
 At the prompt of a terminal session:
