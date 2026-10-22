@@ -1,6 +1,6 @@
 {
   "name": "usage-meter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Live per-session usage band: tokens, cache hit and session cost, with optional turn detail",
   "types": "./types/index.d.ts",
   "userConfig": {
