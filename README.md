@@ -80,7 +80,13 @@ Run `/usage-meter` to see the options:
 
 ![usage-meter help table](docs/help.png)
 
-Pick `band` or `status`, and turn the turn-detail row `on` or `off`. The same options are in the plugin's config menu as the defaults.
+| Command | Effect |
+| --- | --- |
+| `/usage-meter band` | Row above the prompt |
+| `/usage-meter status` | Status line (shows the plugin name) |
+| `/usage-meter detail on` / `off` | Add or remove last turn time and cost, total time, turns and average cost |
+
+The same options are in the plugin's config menu as the defaults.
 
 ## Limits
 
