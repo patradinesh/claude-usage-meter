@@ -26,15 +26,41 @@ At the prompt of a terminal session:
 
 From a shell:
 
-```
+```bash
 claude plugin marketplace add patradinesh/claude-usage-meter
 ```
 
-```
+```bash
 claude plugin install usage-meter@claude-usage-meter
 ```
 
 In the desktop app, where `/plugin` does not run: click + next to the prompt box, then Plugins, Add marketplace with `patradinesh/claude-usage-meter`, then Add plugin.
+
+## Remove
+
+Uninstall the plugin, then remove the marketplace.
+
+At the prompt of a terminal session:
+
+```
+/plugin uninstall usage-meter@claude-usage-meter
+```
+
+```
+/plugin marketplace remove claude-usage-meter
+```
+
+From a shell:
+
+```bash
+claude plugin uninstall usage-meter
+```
+
+```bash
+claude plugin marketplace remove claude-usage-meter
+```
+
+In the desktop app: open Plugins, remove usage-meter, then remove the marketplace.
 
 ## What it shows
 
