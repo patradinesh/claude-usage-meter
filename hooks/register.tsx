@@ -11,13 +11,12 @@ const stats = atom({ plugin: 'usage-meter', key: 'stats' } as const, empty)
 const detail = atom({ plugin: 'usage-meter', key: 'detail' } as const, noDetail)
 const prefs = atom({ plugin: 'usage-meter', key: 'prefs' } as const, noPrefs)
 
-const HELP = [
-  'Usage: /usage-meter [band|status] [detail on|off]',
-  '  band|status  band = row above the prompt, status = status line (shows the plugin name)',
-  '  detail       on = add last turn time and cost, total time, turn count and average cost',
-  'Figures: In/Out = tokens this session. Cache = share of input read from the prompt cache.',
-  '         Session = what this session has cost so far. Last = time and cost of the latest turn.',
-].join('\n')
+const HELP = `| Command | Effect |
+| --- | --- |
+| \`/usage-meter band\` / \`status\` | Where to show it |
+| \`/usage-meter detail on\` / \`off\` | Turn time, cost and turn count |
+
+**In/Out** tokens · **Cache** input read from cache · **Session** cost so far`
 
 // Config options are the defaults; /usage-meter choices override them for the session.
 async function view($: any, dDisplay: string, dDetail: boolean) {
@@ -71,7 +70,7 @@ export const register: Register = (on, options) => {
     await $.store.set('prefs', await read($, prefs))
     await sync($, dDisplay, dDetail)
     const v = await view($, dDisplay, dDetail)
-    return { text: `Display: ${v.display}. Detail: ${v.detail ? 'on' : 'off'}.\n${HELP}` }
+    return { text: `**Display:** ${v.display} · **Detail:** ${v.detail ? 'on' : 'off'}\n\n${HELP}` }
   })
 
   // Engine pushes new figures after each turn: no polling, no model call, no tokens.
