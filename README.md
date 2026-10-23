@@ -78,6 +78,8 @@ With detail on, a second row adds last turn time and cost, total time, turn coun
 
 Run `/usage-meter`:
 
+![usage-meter help table](docs/help.png)
+
 | Command | Effect |
 | --- | --- |
 | `/usage-meter` | Show current settings and help |
