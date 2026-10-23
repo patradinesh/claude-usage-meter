@@ -76,21 +76,15 @@ With detail on, a second row adds last turn time and cost, total time, turn coun
 
 ## Choose where and how
 
-Run `/usage-meter`:
+Run `/usage-meter` to see the options:
 
 ![usage-meter help table](docs/help.png)
 
-| Command | Effect |
-| --- | --- |
-| `/usage-meter` | Show current settings and help |
-| `/usage-meter band` | Row above the prompt (default) |
-| `/usage-meter status` | Status line. The engine adds the plugin name as a label, and long text can truncate |
-| `/usage-meter detail on` / `off` | Turn detail row on or off |
-
-Choices are saved across sessions. The same options are in the plugin's config menu as the defaults.
+Pick `band` or `status`, and turn the turn-detail row `on` or `off`. The same options are in the plugin's config menu as the defaults.
 
 ## Limits
 
+- The status line shows the plugin name as a label, added by the engine, and long text can truncate.
 - Counts start when the mod loads, so earlier turns in a session are not counted.
 - Per-turn cost is the rise in session cost during the turn. Subagent cost is included.
 
