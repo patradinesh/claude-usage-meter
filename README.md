@@ -78,13 +78,13 @@ With detail on, a second row adds last turn time and cost, total time, turn coun
 
 Run `/usage-meter` to see the options:
 
-![usage-meter help table](docs/help.png)
-
 | Command | Effect |
 | --- | --- |
 | `/usage-meter band` | Row above the prompt |
 | `/usage-meter status` | Status line (shows the plugin name) |
 | `/usage-meter detail on` / `off` | Add or remove last turn time and cost, total time, turns and average cost |
+
+**In/Out** tokens · **Cache** input read from cache · **Session** cost so far
 
 The same options are in the plugin's config menu as the defaults.
 

@@ -13,8 +13,9 @@ const prefs = atom({ plugin: 'usage-meter', key: 'prefs' } as const, noPrefs)
 
 const HELP = `| Command | Effect |
 | --- | --- |
-| \`/usage-meter band\` / \`status\` | Where to show it |
-| \`/usage-meter detail on\` / \`off\` | Turn time, cost and turn count |
+| \`/usage-meter band\` | Row above the prompt |
+| \`/usage-meter status\` | Status line (shows the plugin name) |
+| \`/usage-meter detail on\` / \`off\` | Add or remove last turn time and cost, total time, turns and average cost |
 
 **In/Out** tokens · **Cache** input read from cache · **Session** cost so far`
 
