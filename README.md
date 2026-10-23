@@ -12,16 +12,26 @@ Or in the status line (`/usage-meter status`):
 
 ## Install
 
+Two steps: add the marketplace, then install the plugin.
+
 At the prompt of a terminal session:
 
 ```
-/plugin install usage-meter --marketplace patradinesh/claude-usage-meter
+/plugin marketplace add patradinesh/claude-usage-meter
+```
+
+```
+/plugin install usage-meter@claude-usage-meter
 ```
 
 From a shell:
 
 ```
-claude plugin install usage-meter --marketplace patradinesh/claude-usage-meter
+claude plugin marketplace add patradinesh/claude-usage-meter
+```
+
+```
+claude plugin install usage-meter@claude-usage-meter
 ```
 
 In the desktop app, where `/plugin` does not run: click + next to the prompt box, then Plugins, Add marketplace with `patradinesh/claude-usage-meter`, then Add plugin.
